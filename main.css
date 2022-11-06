@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: rgb(196, 53, 53);
+}
+
+header li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header a {  
+    text-decoration: none;
+}
+
+aside,a {
+    text-decoration: none;
+    margin-top: 54px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    margin-top: 24px;
+}
+
+
+
+.btn {
+    padding: 5px;
+    border: 2px solid rgb(138, 138, 138);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+    color: rgb(255, 255, 255);
+}
+
+.header-wrap {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin: 15px; 
+}
+
+main {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+section {
+    width: 80%;
+}
+
+aside {
+    width: 78%;
+}
+
+
+.post-itm {
+    display: inline-block;
+    width: 23%;
+}    
+
+@media screen and (max-width: 640px) {
+    input {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .post-itm {
+        width: 30%;
+    }    
+}
+
+@media screen and (max-width: 640px) {
+    .post-itm {
+        width: 48%;
+    }
+
+    main {
+        text-align: center;
+        flex-direction: column;
+    } 
+    section {
+        width: 90%;
+    }   
+    aside {
+        width: 100%;
+    }
+    input{
+        display: flex;
+    }
+}
